@@ -1,0 +1,9 @@
+.navbar-icon{
+    width: 40px;
+    fill: white;
+    padding-left: 10px;
+}
+
+.navbar-icon:hover{
+    width: 50px;
+}
