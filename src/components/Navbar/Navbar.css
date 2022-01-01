@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar-container{
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbar-container .navbar-logo{
+    font-size: 30px;
+    color: white;
+    margin: 20px
+}
+
+.navbar-container .navbar-list{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.navbar-container .navbar-list .navbar-li{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.navbar-li:hover{
+    font-weight: bold;
+}
