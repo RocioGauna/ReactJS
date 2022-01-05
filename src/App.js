@@ -1,5 +1,5 @@
 import './App.css';
-import ItemCount from './components/Contador/ItemCount';
+import ItemCount from './components/Counter/ItemCount';
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 

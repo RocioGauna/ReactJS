@@ -5,7 +5,7 @@ const ItemList = ({products}) => {
     console.log('ItemList', products);
     
     return (
-        <div>
+        <div className='containerItem'>
             {products.map((product) => {
                 return (<Item key = {product.id} product = {product} img = {product.img}/>)
             })}
