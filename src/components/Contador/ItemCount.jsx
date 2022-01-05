@@ -3,19 +3,19 @@ import React, {useState} from 'react'
 const ItemCount = ({min, max}) => {
     const [counter, setCounter] = useState (min)
 
-    const maximo = () => {
+    const maximum = () => {
         counter < max && setCounter (prev => prev + 1)
     }
 
-    const minimo = () => {
+    const minimum = () => {
         counter > min && setCounter (prev => prev - 1)
     }
 
     return (
         <div className='counter'>
             <h2>{counter}</h2>
-            <button onClick = {maximo}>+</button>
-            <button onClick = {minimo}>-</button>
+            <button onClick = {maximum}>+</button>
+            <button onClick = {minimum}>-</button>
         </div>
     )
 }

@@ -1,14 +1,13 @@
 import './App.css';
 import ItemCount from './components/Contador/ItemCount';
 import Navbar from './components/Navbar/Navbar';
-
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
-  const greeting = 'Feliz comienzo de año'
-
   return (
     <center>
       <Navbar />
+      <ItemListContainer greeting = 'Bienvenidos a mi Ecommerce' />
       <ItemCount min = {1} max = {15} />
     </center>
   );
