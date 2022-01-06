@@ -1,4 +1,4 @@
-export const products = [{id: '1', product: 'Skin - Annie', price: 40, img: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_6.jpg'},
+export const products = [{id: '1', product: 'Skin - Annie', description: 'Annie is a child mage with immense pyrokinetic power. Even in the shadows of the mountains north of Noxus, she is a magical outlier.', price: 40, img: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_6.jpg'},
     {id: '2', product: 'Skin - Eckko', price: 50, img: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_19.jpg'},
     {id: '3', product: 'Skin - Lulu', price: 60, img: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lulu_14.jpg'},
     {id: '4', product: 'Skin - Caitlyn', price: 80, img: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_1.jpg'},

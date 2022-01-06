@@ -1,0 +1,25 @@
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+
+.counter .btn{
+    background-color: white;
+    border: none;
+    color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    margin: 5px;
+}
+
+.counter .btn:hover{
+    background-color: blueviolet;
+    color: white;
+}

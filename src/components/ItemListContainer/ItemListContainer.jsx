@@ -16,7 +16,7 @@ const ItemListContainer = ({ greeting }) => {
     }, []);
 
     return (
-        <div>
+        <div className='itemListContainer'>
             <h2 style={{ textAlign: 'center' }}>{greeting}</h2>
             <ItemList products = {data} />
         </div>

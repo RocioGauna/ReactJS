@@ -1,0 +1,22 @@
+.containerDescription .containerDescriptionProduct{
+    width: 200px;
+    border: 1px solid gray;
+    margin: 50px;
+}
+
+.containerDescriptionProduct{
+    padding: 2rem;
+}
+
+.containerDescriptionProduct h2{
+    padding-bottom: 5px;
+}
+
+.containerDescriptionProduct img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.containerDescriptionProduct h3{
+    padding-top: 15px;
+}

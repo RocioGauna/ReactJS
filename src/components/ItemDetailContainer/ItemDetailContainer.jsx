@@ -13,7 +13,7 @@ const ItemDetailContainer = () => {
     console.dir(product)
 
     return (
-        <div>
+        <div className='containerDescription'>
            <ItemDetail product = {product}/> 
         </div>
     )
