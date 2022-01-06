@@ -1,5 +1,5 @@
 import React from 'react';
-import Item from '../Item.jsx/Item';
+import Item from '../Item/Item';
 
 const ItemList = ({products}) => {
     console.log('ItemList', products);
