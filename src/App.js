@@ -1,17 +1,21 @@
-import './App.css';
-import ItemCount from './components/Counter/ItemCount';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import Cart from './components/Cart/Cart'
 
 function App() {
   return (
-    <center>
-      <Navbar />
-      <ItemListContainer greeting = 'Bienvenidos a mi Ecommerce' />
-      <ItemCount min = {1} max = {15} />
-      <ItemDetailContainer />
-    </center>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route exact path = '/' element = { <ItemListContainer /> } />
+          <Route exact path = '/category' element = { <ItemListContainer />} />
+          <Route exact path = '/category/:categoryId' element = { <ItemListContainer />} />
+          <Route exact path = '/description/:descriptionId' element = { <ItemDetailContainer />} />
+          <Route exact path = '/cart' element = { <Cart /> } />
+        </Routes>
+      </BrowserRouter>
   );
 }
 
