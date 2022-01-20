@@ -11,7 +11,7 @@ const ItemListContainer = ({ greeting }) => {
     useEffect(() => {
         if(categoryId){
             bringProducts
-            .then (resp => setProduct (resp.filter (product => product.categoryId === categoryId)))
+            .then (resp => setProduct(resp.filter(product => product.categoryId === categoryId))) 
             .catch(error => console.log(error))            
         } else {    
             bringProducts       

@@ -8,8 +8,8 @@ function Navbar() {
         <nav className='navbar-container'>
             <ul className='navbar-list'>
                 <Link to = '/'><li className='navbar-li'>Home</li></Link>
-                <Link to = '/category/champions'><li className='navbar-li'>Champions</li></Link>
-                <Link to = '/category/skins'><li className='navbar-li'>Skins</li></Link>
+                <Link to = '/category/Champions'><li className='navbar-li'>Champions</li></Link>
+                <Link to = '/category/Skins'><li className='navbar-li'>Skins</li></Link>
                 <Link to = '/cart'>
                     <Icon />
                 </Link>

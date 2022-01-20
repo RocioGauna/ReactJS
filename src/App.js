@@ -10,7 +10,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path = '/' element = { <ItemListContainer /> } />
-          <Route exact path = '/category' element = { <ItemListContainer />} />
           <Route exact path = '/category/:categoryId' element = { <ItemListContainer />} />
           <Route exact path = '/description/:descriptionId' element = { <ItemDetailContainer />} />
           <Route exact path = '/cart' element = { <Cart /> } />
