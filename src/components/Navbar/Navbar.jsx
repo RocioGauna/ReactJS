@@ -10,7 +10,7 @@ function Navbar() {
                 <Link to = '/'><li className='navbar-li'>Home</li></Link>
                 <Link to = '/category/Champions'><li className='navbar-li'>Champions</li></Link>
                 <Link to = '/category/Skins'><li className='navbar-li'>Skins</li></Link>
-                <Link to = '/cart'>
+                <Link to = '/category/cart'>
                     <Icon />
                 </Link>
             </ul>

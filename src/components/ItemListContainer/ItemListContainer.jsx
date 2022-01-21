@@ -5,18 +5,17 @@ import ItemList from '../ItemList/ItemList';
 
 const ItemListContainer = ({ greeting }) => {
     const [product, setProduct] = useState ([]);
-
     const {categoryId} = useParams();
 
     useEffect(() => {
         if(categoryId){
             bringProducts
             .then (resp => setProduct(resp.filter(product => product.categoryId === categoryId))) 
-            .catch(error => console.log(error))            
+            .catch (error => console.log(error))            
         } else {    
             bringProducts       
-            .then(resp => setProduct(resp))
-            .catch(error => console.log(error)) 
+            .then (resp => setProduct(resp))
+            .catch (error => console.log(error)) 
         }
     }, [categoryId])
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Item.css'
-import ItemCount from '../Counter/ItemCount';
 
 const Item = ({product}) => {
     return (
@@ -12,7 +11,6 @@ const Item = ({product}) => {
             <Link to = {`/description/${product.id}`} >
             <button className='productsButton'>Ver más</button>
             </Link>
-            <ItemCount min = {1} max = {15} />
         </div>
     )
 }
