@@ -8,7 +8,6 @@ const ItemDetail = ({product}) => {
     const [show, setShow] = useState (true);
     const onAdd = (counter) => {
         setShow(false)
-        // addCart({...product, amount:counter})
     }
 
     return (
