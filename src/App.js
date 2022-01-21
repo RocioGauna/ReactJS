@@ -3,7 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
-import { CartContextProvider } from './components/CartContext/CartContext';
+import { CartContextProvider } from './CartContext/CartContext';
 
 function App() {
   return (
