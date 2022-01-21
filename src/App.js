@@ -2,10 +2,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import Cart from './components/Cart/Cart'
+import Cart from './components/Cart/Cart';
+import { CartContextProvider } from './components/CartContext/CartContext';
 
 function App() {
   return (
+    <CartContextProvider>
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -15,6 +17,7 @@ function App() {
           <Route exact path = '/cart' element = { <Cart /> } />
         </Routes>
       </BrowserRouter>
+    </CartContextProvider>
   );
 }
 
