@@ -50,8 +50,17 @@ export const CartContextProvider = ({children}) => {
         return count;
     };
 
+    // Sumar productos
+    const addPrice = () => {
+        let price = 0;
+        cartList.forEach((product) => {
+            price += product.price * product.price;
+        });
+        return price;
+    };
+
     return(
-        <CartContext.Provider value = {{cartList, addCart, empty, deleteProduct, total}}>
+        <CartContext.Provider value = {{cartList, addCart, empty, deleteProduct, total, addPrice}}>
             {children}
         </CartContext.Provider>
     )
