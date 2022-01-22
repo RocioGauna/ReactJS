@@ -2,7 +2,7 @@ import { useCartContext } from '../../CartContext/CartContext'
 import { Link } from 'react-router-dom'
 
 const Cart = () => {
-    const { cartList, empty, deleteProduct, total, addPrice} = useCartContext ()
+    const { cartList, empty, deleteProduct, total, price} = useCartContext ()
     
     return (
         <>
@@ -19,7 +19,8 @@ const Cart = () => {
                             <img src={prod.img} alt={prod.product} />
                             <div>
                                 <h3>{prod.name}</h3>
-                                <h3>Amount: {prod.price} USD</h3>
+                                <h3>Price: {prod.price} USD</h3>
+                                <h3>Amount: {prod.amount}</h3>
                                 {/* Eliminar */}
                                 <button onClick={() => deleteProduct(prod.id)}>Delete</button>
                             </div>
