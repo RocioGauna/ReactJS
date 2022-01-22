@@ -10,9 +10,9 @@ const ItemDetail = ({product}) => {
 
     const [show, setShow] = useState (true);
 
-    const onAdd = () => {
+    const onAdd = (amount) => {
         setShow(false)
-        addCart({ ...product, amount: false })
+        addCart({...product, amount})
     }
 
     return (

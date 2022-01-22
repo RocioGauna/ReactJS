@@ -10,10 +10,16 @@ export const CartContextProvider = ({children}) => {
     const [cartList, setCartList] = useState([])
 
     const addCart = (item, amount) => {
-        if (onCart(item.id)) {
-            add (item, amount);
-        } else {
-            setCartList ([...cartList, { ...item, amount }]);
+        const indice = cartList.findIndex(i => i.id === item.id)
+        
+        if (indice > -1){
+        const quantifyOld = cartList [indice].amount
+        let quantifyNew = quantifyOld + item.amount
+        cartList [indice].amount = quantifyNew
+        let arrAux = [...cartList]
+        setCartList(arrAux)
+        } else{
+        setCartList([...cartList, item])
         }
     };
 
