@@ -5,7 +5,7 @@ const Cart = () => {
     
     return (
         <div>            
-            {cartList.map(prod => <li key={prod.id}>{prod.product} - cant: {prod.amount}</li>)}
+            {cartList.map(prod => <li key={prod.id}>{prod.product} - amount: {prod.amount}</li>)}
             <button onClick = {empty}>Empty cart</button>
         </div>
     )
