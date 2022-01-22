@@ -23,7 +23,7 @@ const ItemDetail = ({product}) => {
             <h3>{product.price} USD</h3>
             {show ? <ItemCount min = {1} max = {15} onAdd = {onAdd} /> : 
             <div className='btnDetail'>
-                <Link to = '/category/cart'><button>Finish</button></Link>
+                <Link to = '/cart'><button>Finish</button></Link>
                 <Link to = '/'><button>Continue buying</button></Link>
             </div>}
         </div>
